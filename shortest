@@ -1,0 +1,7 @@
+def find_short(s):
+    shortest= min(s.split(), key=len)
+    print(shortest)
+    l=len(shortest)
+    return l # l: shortest word length
+
+print("Shortest: "+ str(find_short("How now I to brown cow")))

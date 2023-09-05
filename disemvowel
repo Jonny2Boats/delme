@@ -1,0 +1,14 @@
+def disemvowel(string_):   
+    vowels="aeiou"
+    gotVowel = False
+    tempString= ""
+    for i in string_:
+        for v in vowels:
+            if i.lower()==v:
+                gotVowel=True              
+        if gotVowel==False:
+            tempString= tempString+ i
+        gotVowel=False
+    return tempString
+
+print(disemvowel("LOL you lot is loosers"))

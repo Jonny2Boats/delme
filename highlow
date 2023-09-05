@@ -1,0 +1,10 @@
+def sum_two_smallest_numbers(numbers):
+	#your code here
+	low=0
+	low2=0
+	low= min(numbers)
+	numbers.remove(low)
+	low2= min(numbers)
+	return low + low2
+
+print(sum_two_smallest_numbers([22,40,67,999]))

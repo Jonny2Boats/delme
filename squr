@@ -1,0 +1,18 @@
+
+nums= 765
+print(nums)
+
+outInt= ""
+
+numsS= str(nums)
+#print(numsS)
+
+for i in numsS:
+	
+	I=int(i)
+	IS=(I*I)
+	thisInt = str(IS)
+	outInt+= thisInt
+	
+print(int(outInt))
+

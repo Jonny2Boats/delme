@@ -1,0 +1,39 @@
+total =0
+temp_tot = 0
+
+shopping_list = ["banana", "orange", "apple"]
+
+
+prices = {
+  "banana" : 4,
+  "apple"  : 2,
+  "orange" : 1.5,
+  "pear"   : 3,
+}
+stock = {
+  "banana" : 6,
+  "apple"  : 0,
+  "orange" : 32,
+  "pear"   : 15,
+}
+
+def compute_bill(food):
+  total=0
+  for i in shopping_list:
+    total += prices[i]
+  return total
+  
+
+print(compute_bill(shopping_list))
+
+'''
+for key in prices:
+  print(key)
+  print("price: %s" % prices[key])
+  print("stock: %s" % stock[key])
+  temp_tot= prices[key] * stock[key]
+  print(temp_tot)
+  total += temp_tot
+
+print(total)
+'''

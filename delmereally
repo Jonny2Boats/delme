@@ -1,0 +1,14 @@
+
+
+x=4
+y= 8
+
+print(x,y)
+
+z=x
+
+print( x,y,z)
+
+x=55
+
+print( x,y,z)

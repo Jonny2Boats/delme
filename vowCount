@@ -1,0 +1,20 @@
+def get_count(sentence):
+    # parse through sentence & ++ if is in list 
+    vowels="aeiou"
+    count = 0
+    
+    for i in sentence:
+        #print("i is: " + i)
+        #for v in range(len(vowels)):
+        for v in vowels:
+            #print("V is:" + v)
+            if (i==v): 
+                count+=1
+                #print("In get_count, count=" + str(count))
+                
+    return count
+
+#print(get_count("bcdfghjklmnpqrstvwxz"))
+
+#print(get_count("hello cruel world"))
+print(get_count("y"))

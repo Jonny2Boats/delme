@@ -1,0 +1,12 @@
+def stringy(size):
+
+	bitty =1
+	outString=""
+		
+	for i in range(size):
+		outString+= str(bitty)
+		if bitty==1: bitty= 0 
+		else: bitty= 1
+	return outString
+
+print(stringy(5000))
